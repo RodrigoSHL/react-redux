@@ -17,7 +17,7 @@ const Pokemon = () => {
         {
                 pokemons.map(item => (
                     <li key={item.name}> {item.name}</li>
-                ))
+                 ))
             }
         </ul>
     </div>
