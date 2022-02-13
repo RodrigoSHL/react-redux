@@ -3,9 +3,11 @@ import thunk from 'redux-thunk'
 import { composeWithDevTools } from '@redux-devtools/extension';
  
 import pokeReducer from './pokeDuck'
+import taskReducer from './taskDuck';
  
 const rootReducer = combineReducers({
-    pokemons: pokeReducer
+    pokemons: pokeReducer,
+    tasks: taskReducer
 })
  
 export default function generateStore() {
